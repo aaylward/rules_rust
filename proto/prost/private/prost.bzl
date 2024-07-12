@@ -232,7 +232,7 @@ def _rust_prost_aspect_impl(target, ctx):
 
     deps = runtime_deps + direct_deps
 
-    crate_name = ctx.label.name.replace("-", "_").replace("/", "_")
+    crate_name = "example_service" # ctx.label.name.replace("-", "_").replace("/", "_")
 
     proto_info = target[ProtoInfo]
 
